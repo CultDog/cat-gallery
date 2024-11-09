@@ -1,0 +1,77 @@
+.custom-select {
+  position: relative;
+  font-family: Arial, sans-serif;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  background-color: rgb(227, 226, 236);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+}
+
+.custom-select:hover {
+  border-color: #3498db;
+}
+
+.selected {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+  font-size: 1rem;
+}
+
+.arrow {
+  margin-left: 10px;
+  pointer-events: none;
+}
+
+.options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.option {
+  padding: 10px;
+  color: #333;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+body.dark-theme .custom-select {
+  border: 2px solid #2a3f55;
+  background-color: #7f8c8d;
+}
+
+body.dark-theme .custom-select .selected {
+  color: white;
+}
+
+body.dark-theme .custom-select .options {
+  background-color: #7f8c8d;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+body.dark-theme .custom-select .option {
+  color: white;
+}
+
+body.dark-theme .custom-select .option:hover {
+  background-color: #3498db;
+  color: white;
+}

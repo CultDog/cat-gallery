@@ -1,0 +1,116 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  position: relative;
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 4;
+  width: 90%;
+  max-width: 450px;
+  animation: fadeIn 0.3s ease;
+  text-align: center;
+}
+
+.modal-content h3 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.modal-content .modal-close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+  color: #34495e;
+}
+
+.modal-content button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content .btn-yes {
+  background-color: #4caf50;
+}
+
+.modal-content .btn-yes:hover {
+  background-color: #45a049;
+}
+
+.modal-content .btn-no {
+  background-color: #f44336;
+}
+
+.modal-content .btn-no:hover {
+  background-color: #e53935;
+}
+
+body.dark-theme .modal-content {
+  background: #34495e;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-theme .modal-content h3 {
+  color: #ecf0f1;
+}
+
+body.dark-theme .modal-close {
+  color: white;
+}
+
+body.dark-theme .modal-close:hover {
+  color: gray;
+}
+
+body.dark-theme .modal-content .btn-yes {
+  background-color: #4caf50;
+}
+
+body.dark-theme .modal-content .btn-no {
+  background-color: #e74c3c;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    max-width: 70%;
+    max-height: 90%;
+  }
+}

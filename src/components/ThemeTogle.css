@@ -1,0 +1,32 @@
+.theme-toggle-button {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: rgb(108, 99, 235);
+  cursor: pointer;
+  z-index: 2;
+  transition:
+    background-color 0.3s,
+    box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle-button:hover {
+  background-color: #34495e;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .theme-toggle-button {
+  background-color: #34495e;
+  color: yellow;
+}
+
+body.dark-theme .theme-toggle-button:hover {
+  background-color: white;
+  color: yellowgreen;
+}

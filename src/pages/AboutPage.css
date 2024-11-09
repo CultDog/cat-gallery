@@ -1,0 +1,143 @@
+.about-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.about-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-page h2 {
+  color: #2c3e50;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 1rem;
+}
+
+.about-section {
+  margin-bottom: 2.5rem;
+}
+
+.about-section h3 {
+  color: #3498db;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.about-section ul,
+.about-section ol {
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-section li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.contact-link {
+  display: inline-block;
+  color: #3498db;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+body.dark-theme .about-page {
+  background-color: #2c3e50;
+  color: white;
+}
+
+body.dark-theme .about-container {
+  background-color: #34495e;
+  color: white;
+}
+
+body.dark-theme .about-page h2 {
+  color: #eef3f3;
+}
+
+body.dark-theme .about-section h3 {
+  color: #0eecec;
+}
+
+body.dark-theme .about-section p,
+body.dark-theme .about-section li {
+  color: #bdc3c7;
+}
+
+body.dark-theme .contact-link {
+  color: #3498db;
+}
+
+body.dark-theme .contact-link:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 1rem;
+  }
+
+  .about-container {
+    padding: 1rem;
+  }
+
+  .about-page h2 {
+    font-size: 2rem;
+  }
+
+  .about-section h3 {
+    font-size: 1.3rem;
+  }
+}
+
+.about-section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-section:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.about-section:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.about-section:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.about-section:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.about-section:nth-child(5) {
+  animation-delay: 0.5s;
+}
